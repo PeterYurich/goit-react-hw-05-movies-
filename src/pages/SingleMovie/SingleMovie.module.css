@@ -1,0 +1,36 @@
+.section {
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.61);
+}
+
+.mainInfo {
+    display: flex;
+}
+
+.column:first-child {
+    margin-right: 15px;
+}
+
+.additional_title {
+    margin-bottom: 20px;
+}
+
+.additional_filters {
+    list-style:square
+}
+
+.goBack {
+    display: block;
+    margin-bottom: 15px;
+    color:black;
+    width: 110px;
+    padding: 3px;
+    
+    border: 1px solid black ;
+    border-radius: 8px;
+}
+
+.goBack:hover {
+    border: 1px solid rgb(17, 0, 253) ;
+    background-color:rgb(127, 238, 201);
+}
