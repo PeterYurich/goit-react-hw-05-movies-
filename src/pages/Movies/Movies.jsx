@@ -56,8 +56,8 @@ function Movies() {
       {loading && <div>LOADING...</div>}
       <ul>
         {moviesToRender.map(movie => (
-          <li key={movie.id} state={{from: location}}>
-            <Link className="list_item" to={`/movies/${movie.id}`}>
+          <li key={movie.id} >
+            <Link state={{from: location}} className="list_item" to={`/movies/${movie.id}`}>
               - {movie.title}
             </Link>
           </li>

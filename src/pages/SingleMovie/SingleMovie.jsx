@@ -10,7 +10,6 @@ function SingleMovie() {
   const [movieData, setMovieData] = useState(null);
   const location = useLocation();
   const backLinkHref = location.state?.from ?? '/';
-  console.log("loc.st", location.state) // null always
 
   useEffect(() => {
     const getMovieData = async () => {
