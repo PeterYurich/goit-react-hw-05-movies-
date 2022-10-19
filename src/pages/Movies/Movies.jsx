@@ -45,12 +45,12 @@ function Movies() {
     const { value } = evt.target;
     setInputValue(value);
   }
-
+console.log(searchValue)
   return (
     <div className="container section">
       <form onSubmit={saveSearchRequest}>
         <label>
-          <input type="text" onChange={changeHandler} value={inputValue} />
+          <input type="text" onChange={changeHandler} value={query || inputValue} />
         </label>
       </form>
       {loading && <div>LOADING...</div>}

@@ -9,7 +9,7 @@ function SingleMovie() {
   const [loading, setLoadin] = useState(true);
   const [movieData, setMovieData] = useState(null);
   const location = useLocation();
-  const backLinkHref = location.state?.from ?? '/';
+  const [backLink] = useState(location.state?.from ?? '/')
 
   useEffect(() => {
     const getMovieData = async () => {
@@ -24,12 +24,12 @@ function SingleMovie() {
     };
     getMovieData();
   }, [movieId]);
-  
+
   return (
     <>
       <div className={css.section}>
         <div className="container">
-          <Link className={css.goBack} to={backLinkHref}>
+          <Link className={css.goBack} to={backLink}>
             {'<<< '}Go back
           </Link>
           {loading && <div> LOADING...</div>}
