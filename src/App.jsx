@@ -2,9 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home/Home';
-// import Movies from './pages/Movies/Movies';
-// import SingleMovie from './pages/SingleMovie/SingleMovie';
-// import Cast from './components/Cast/Cast';
+
 import { Navbar } from './components/Navbar/Navbar';
 import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 import { Reviews } from './components/Reviews/Reviews';

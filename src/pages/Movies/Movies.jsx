@@ -45,7 +45,7 @@ function Movies() {
     const { value } = evt.target;
     setInputValue(value);
   }
-console.log(searchValue)
+
   return (
     <div className="container section">
       <form onSubmit={saveSearchRequest}>
